@@ -1,0 +1,31 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-image: url(3.jpg);
+  object-fit:fill;
+  backdrop-filter: blur(3px);
+
+}
+
+.glass-div {
+  text-align: left;
+  background-color:rgb(255 255 255 / 15%);
+  height: 500px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 20px;
+  /* backdrop-filter: blur(2px); */
+}
+
+
+
+
+
+
+
+

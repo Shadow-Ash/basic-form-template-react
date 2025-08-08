@@ -1,0 +1,107 @@
+// #root {
+//     // max-width: 1280px;
+//     // margin: 0 auto;
+//     // padding: 2rem;
+//     // text-align: center;
+// }
+
+.glass-div {
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: auto;
+    width: 400px;
+    padding: 30px;
+    border-radius: 25px;
+    // border: 2px solid white;
+    margin-top: 10px;
+    box-shadow: 0px 0px 1px lightgray;
+}
+
+// Variables 
+
+$form-margins: 0px 0px 30px 0px;
+
+// Form Mixin
+
+@mixin textfields() {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    height: 30px;
+    font-size: 15px;
+    margin-top: 5px;
+    backdrop-filter: blur(2px);
+    border-bottom: 1px solid ;
+}
+
+@mixin textnames() {
+    color: white;
+    font-size: 15px;
+}
+
+@mixin buttonstwo() {
+    margin: 0px 30px;
+    width: 130px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+.heading1 {
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+// form styles
+
+.person-name {
+    margin: $form-margins;
+    @include textnames()
+}
+
+.username {
+    margin: $form-margins;
+    @include textnames()
+}
+
+.email {
+    margin: $form-margins;
+    @include textnames()
+}
+
+.mobile-number {
+    margin: $form-margins;
+    @include textnames()
+}
+
+.password {
+    margin: $form-margins;
+    @include textnames()
+}
+
+.buttons {
+    margin: $form-margins;
+    text-align: center;
+}
+
+.signin-button {
+@include buttonstwo();
+}
+
+.signup-button {
+    @include buttonstwo();
+}
+
+.textfield {
+    @include textfields();
+}
+
+
+
