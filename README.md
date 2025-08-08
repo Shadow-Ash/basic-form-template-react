@@ -22,35 +22,7 @@ This project is perfect for learning the basics of **React components, useState 
 ---
 
 ## 📂 Screenshots
-...
 
-import cv2
-import os
+<img width="1918" height="912" alt="1" src="https://github.com/user-attachments/assets/918845a1-be3c-46e0-a999-80d4231ec4dc" />
 
-# Path to the uploaded video
-video_path = "/mnt/data/Simple Form.mkv"
-
-# Output screenshot path
-screenshot_path = "/mnt/data/simple_form_screenshot.png"
-
-# Capture video
-cap = cv2.VideoCapture(video_path)
-
-# Get total frames
-total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
-
-# Select a frame from the middle
-frame_number = total_frames // 2
-cap.set(cv2.CAP_PROP_POS_FRAMES, frame_number)
-
-# Read the frame
-ret, frame = cap.read()
-
-if ret:
-    # Save the frame as an image
-    cv2.imwrite(screenshot_path, frame)
-
-cap.release()
-
-screenshot_path
-
+<img width="1918" height="906" alt="2" src="https://github.com/user-attachments/assets/56c9e5c0-7143-4e0b-9340-9a65b8dac159" />
